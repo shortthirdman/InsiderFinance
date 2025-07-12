@@ -1,0 +1,10 @@
+deap
+pytz
+numpy
+pandas
+yfinance
+matplotlib
+requests
+streamlit
+scikit-learn
+python-dotenv
