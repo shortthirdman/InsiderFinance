@@ -1,10 +1,12 @@
 deap
 pytz
 numpy
+optuna
 pandas
 yfinance
-matplotlib
+tabulate
 requests
 streamlit
+matplotlib
 scikit-learn
 python-dotenv

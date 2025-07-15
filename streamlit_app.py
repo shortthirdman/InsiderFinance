@@ -1,25 +1,26 @@
 import streamlit as st
 
-import yfinance as yf
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import calendar
-import random
-import time
-from deap import base, creator, tools, algorithms
-
-plt.style.use("dark_background")
+# Set up the page configuration
+st.set_page_config(
+    page_title="Insider Finance",
+    page_icon=":streamlit:",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 if "visibility" not in st.session_state:
     st.session_state.visibility = "visible"
     st.session_state.disabled = False
 
-st.title("Hello Streamlit-er 👋")
+# Set up the Streamlit app
+st.title("Insider Finance: Stock Portfolio Optimization with Various Strategies")
 
-symbol = st.text_input("Ticker Symbol", "^GSPC")
-start_date = "1990-01-01"
-end_date = "2024-12-31"
-train_cutoff_date = "2019-12-31"
+st.write("Hello Streamlit-er 👋")
 
-st.table(dataframe)
+trading_strategy_sharpe = st.Page(page="pages/1_TradingStrategy_SharpeRatio.py", title="Trading Strategy - Sharpe Ratio", icon=":streamlit:")
+stock_portfolio_deap = st.Page(page="pages/2_StockPortfolio_DEAP.py", title="Stock Portfolio Optimization with DEAP", icon=":streamlit:")
+
+
+pg = st.navigation([trading_strategy_sharpe, stock_portfolio_deap], title="Insider Finance", icon=":streamlit:")
+
+pg.run()
