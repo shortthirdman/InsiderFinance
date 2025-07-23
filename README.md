@@ -37,3 +37,9 @@ $ streamlit run
 - [Optimized a Trading Strategy Using Sharpe Ratio and Bayesian Optimization](https://wire.insiderfinance.io/i-optimized-a-trading-strategy-using-sharpe-ratio-and-bayesian-optimization-6a40ec76fb3f)
 
 - [Sharpe Ratio vs Return: I Optimized a Trading Strategy for Both So You Don’t Have To](https://wire.insiderfinance.io/sharpe-ratio-vs-return-i-optimized-a-trading-strategy-for-both-so-you-dont-have-to-d8c3715fa964)
+
+- [Optimizing a Bitcoin Rate of Change Trading Strategy](https://wire.insiderfinance.io/how-i-optimized-a-bitcoin-rate-of-change-trading-strategy-using-bayesian-optimization-9cc404d13597)
+
+<!--
+- []()
+-->
